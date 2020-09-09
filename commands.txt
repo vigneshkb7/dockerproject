@@ -1,0 +1,12 @@
+
+# command to run the nginx container
+
+docker container run --publish 80:80 nginx
+
+
+#detach mode
+
+docker container run --publish 80:80 --detach nginx
+
+docker container run --publish 80:80 --detach --name webhost nginx
+
