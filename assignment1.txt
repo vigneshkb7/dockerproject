@@ -1,0 +1,3 @@
+docker container run --publish 80:80 --detach --name webhost nginx
+docker container run --publish 8080:80 --detach --name db -e MY_SQL_PASSWORD=123 mysql
+docker container run --publish 3306:3306 --detach --name httpserver httpd

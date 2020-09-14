@@ -1,0 +1,24 @@
+docker network ls
+
+
+docker network inspect
+
+docker network create --driver
+
+docker network connect   ===> attach network to container
+
+docker network disconnect
+
+
+
+
+----- run nginx server -------
+
+docker container run -p 80:80 --name webhost -d nginx
+
+docker container port webhost
+
+docker container inspect --format '{{.NetworkSettings.IPAddress }}' webhost
+
+
+

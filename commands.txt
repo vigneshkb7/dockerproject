@@ -10,3 +10,31 @@ docker container run --publish 80:80 --detach nginx
 
 docker container run --publish 80:80 --detach --name webhost nginx
 
+
+# to see the process running we should type 
+
+docker top mongo   ==> name of the container
+
+
+docker container top  #process list in one container
+
+docker conatiner inspect # details of one container config
+
+docker conatiner stats # performance stats for all containers
+
+docker conatiner run -it #start new conatiner interactively
+
+docker conatiner exec -it # run additional command in existing conatiner
+
+
+docker container run -it --name proxy nginx bash
+
+# alphine images are very small
+
+
+
+
+
+
+
+
